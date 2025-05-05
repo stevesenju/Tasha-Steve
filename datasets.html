@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Datasets</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Portfolio of Tasha, Oracle Database Administrator. Explore clean public datasets in CSV and JSON formats, SQL tools, and automation projects.">
+    <meta name="keywords" content="Oracle DBA, SQL datasets, free CSV, database automation, data tools, database administrator portfolio, SQLite, Python scripts, free datasets">
+    <meta name="author" content="Tasha Steve">
+  
+    <!-- Language -->
+    <html lang="en">
+  
+    <!-- Open Graph for Social Previews -->
+    <meta property="og:title" content="Tasha Steve">
+    <meta property="og:description" content="Explore public CSV datasets, database tools, and Oracle SQL projects from an aspiring DBA.">
+    <meta property="og:image" content="https://imgur.com/a/xSOKWyo"> <!-- Replace with your actual image URL -->
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Datasets </title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .lang-toggle {
+      width: 100%;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .db-toggle {
+      display: inline-flex;
+      align-items: center;
+      background: #1a1a1a;
+      border: 2px solid #00e6e6;
+      padding: 0.4rem 0.6rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00e6e6;
+      gap: 0.6rem;
+      transition: background 0.3s ease;
+    }
+    .db-toggle:hover {
+      background: #222;
+    }
+    .db-toggle-label {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    .db-toggle-track {
+      background: #000;
+      width: 50px;
+      height: 20px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #00e6e6;
+    }
+    .db-toggle-knob {
+      width: 18px;
+      height: 18px;
+      background: #00e6e6;
+      border-radius: 50%;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      transition: transform 0.3s ease;
+    }
+    body.lang-fr .db-toggle-knob {
+      transform: translateX(28px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">DB//Tasha</a>
+    <ul>
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="datasets.html" class="active">Datasets</a></li>
+    </ul>
+  </nav>
+
+  <!-- LANGUAGE SWITCH -->
+  <div class="lang-toggle">
+    <button class="db-toggle" onclick="toggleLanguage()">
+      <span class="db-toggle-label">EN / FR</span>
+      <span class="db-toggle-track">
+        <span class="db-toggle-knob"></span>
+      </span>
+    </button>
+  </div>
+
+  <main class="content">
+    <h2 class="section-title">
+      <span data-lang="en">Public Datasets</span>
+      <span data-lang="fr">Jeux de données publics</span>
+    </h2>
+
+    <!-- Dataset 1 -->
+    <section class="card">
+      <img src="assets/dataset.png" alt="Devil Fruits Dataset">
+      <div>
+        <h3>One Piece Devil Fruits</h3>
+        <p>
+          <span data-lang="en">A full list of Devil Fruits from One Piece: names, types, abilities, and users — organized and cleaned.</span>
+          <span data-lang="fr">Une liste complète des Fruits du Démon de One Piece : noms, types, pouvoirs et utilisateurs — organisée et nettoyée.</span>
+        </p>
+        <a href="https://drive.google.com/your-devil-fruits-link" target="_blank" class="cta">
+          <span data-lang="en">Download</span>
+          <span data-lang="fr">Télécharger</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Dataset 2 -->
+    <section class="card">
+      <img src="assets/dataset.png"  alt="Anime Quotes Dataset">
+      <div>
+        <h3>Anime Quotes Collection</h3>
+        <p>
+          <span data-lang="en">Well-organized anime character quotes across genres and moods. Designed for NLP training and fan apps.</span>
+          <span data-lang="fr">Citations d'anime bien organisées, classées par genre et ambiance. Idéales pour l'IA ou les applications de fans.</span>
+        </p>
+        <a href="https://drive.google.com/your-anime-quotes-link" target="_blank" class="cta">
+          <span data-lang="en">Download</span>
+          <span data-lang="fr">Télécharger</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Dataset 3 -->
+    <section class="card">
+      <img src="assets/dataset.png"  alt="JSON File Dataset">
+      <div>
+        <h3>Ex sql tool</h3>
+        <p>
+          <span data-lang="en">A lightweight desktop application to view, query, and manage SQLite databases with a simple user interface and backup support.</span>
+          <span data-lang="fr">Une application légère pour visualiser, interroger et gérer des bases de données SQLite avec une interface simple et un support de sauvegarde.</span>
+        </p>
+        <a href="https://drive.google.com/file/d/1A9h-cDzHqNe27dVeMckJgeeV0ezbHfFs/view?usp=sharing" target="_blank" class="cta">
+          <span data-lang="en">Download</span>
+          <span data-lang="fr">Télécharger</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT FOOTER -->
+  <footer class="footer">
+    <ul class="contact-links">
+      <li><a href="mailto:ktashastevebrayan@gmail.com" target="_blank">📧 Email</a></li>
+      <li><a href="https://www.linkedin.com/in/tasha-steve-194013336/" target="_blank">🔗 LinkedIn</a></li>
+      <li>
+        <a href="https://drive.google.com/your-cv-en-link" target="_blank" class="cta" data-lang="en">📄 Download CV (EN)</a>
+        <a href="https://drive.google.com/your-cv-fr-link" target="_blank" class="cta" data-lang="fr">📄 Télécharger CV (FR)</a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- LANGUAGE TOGGLE SCRIPT -->
+  <script>
+    let currentLang = 'en';
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'fr' : 'en';
+      document.body.classList.toggle('lang-fr', currentLang === 'fr');
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === currentLang ? 'inline' : 'none';
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      toggleLanguage();
+      toggleLanguage();
+    });
+  </script>
+
+</body>
+</html>

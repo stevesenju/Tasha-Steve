@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasha Steve</title>
+    
+    <!-- SEO Meta -->
+    <meta name="description" content="Portfolio of Tasha, Oracle Database Administrator. Explore clean public datasets in CSV and JSON formats, SQL tools, and automation projects.">
+    <meta name="keywords" content="Oracle DBA, SQL datasets, free CSV, database automation, data tools, database administrator portfolio, SQLite, Python scripts">
+    <meta name="author" content="Tasha Steve">
+  
+    <!-- Language -->
+    <html lang="en">
+  
+    <!-- Open Graph for Social Previews -->
+    <meta property="og:title" content="Tasha Steve">
+    <meta property="og:description" content="Explore public CSV datasets, database tools, and Oracle SQL projects from an aspiring DBA.">
+    <meta property="og:image" content="https://yourdomain.com/assets/preview.png"> <!-- Replace with your actual image URL -->
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+
+    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tasha Steve</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .lang-toggle {
+      width: 100%;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .db-toggle {
+      display: inline-flex;
+      align-items: center;
+      background: #1a1a1a;
+      border: 2px solid #00e6e6;
+      padding: 0.4rem 0.6rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+      color: #00e6e6;
+      gap: 0.6rem;
+      transition: background 0.3s ease;
+    }
+    .db-toggle:hover {
+      background: #222;
+    }
+    .db-toggle-label {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    .db-toggle-track {
+      background: #000;
+      width: 50px;
+      height: 20px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #00e6e6;
+    }
+    .db-toggle-knob {
+      width: 18px;
+      height: 18px;
+      background: #00e6e6;
+      border-radius: 50%;
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      transition: transform 0.3s ease;
+    }
+    body.lang-fr .db-toggle-knob {
+      transform: translateX(28px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">DB//Tasha</a>
+    <ul>
+      <li style="padding-left: 1rem;"><a href="index.html" class="active">Portfolio</a></li>
+      <li><a href="datasets.html">Datasets</a></li>
+    </ul>
+  </nav>
+
+  <!-- LANGUAGE SWITCH -->
+  <div class="lang-toggle">
+    <button class="db-toggle" onclick="toggleLanguage()">
+      <span class="db-toggle-label">EN / FR</span>
+      <span class="db-toggle-track">
+        <span class="db-toggle-knob"></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>
+        <span data-lang="en">Hello, I'm </span>
+        <span data-lang="fr">Salut, je suis </span>
+        <span class="highlight">Tasha</span>
+      </h1>
+      <p>
+        <span data-lang="en">SQL Database Administrator with a focus on security, data automation, and clean data architecture.</span>
+        <span data-lang="fr">Administrateur de bases de données SQL, spécialisé en sécurité, automatisation des données et architecture de données structurées.</span>
+      </p>
+      <a href="#portfolio" class="cta" data-lang="en">See Projects</a>
+      <a href="#portfolio" class="cta" data-lang="fr">Voir les projets</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/data.png" alt="Server Illustration">
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="content" id="about">
+  <h2 class="section-title">
+    <span data-lang="en">About Me</span>
+    <span data-lang="fr">À propos de moi</span>
+  </h2>
+  <p data-lang="en">
+    I am a SQL Database Administrator with over 3 years of experience, specializing in Oracle (10g, 11g, 21c) for administration, performance tuning, and security. I also have hands-on experience managing MySQL and MS SQL Server environments. My strengths include automation with PL/SQL, shell scripting, and Python, as well as working across both Linux and Windows platforms. I have managed development, testing, and production environments, and I am currently working on personal data management projects to deepen my knowledge in architecture and automation.
+  </p>
+  <p data-lang="fr">
+    Je suis administrateur de bases de données SQL avec plus de 3 ans d'expérience, spécialisé dans l’administration Oracle (10g, 11g, 21c) pour la gestion, l’optimisation des performances et la sécurité. J'ai également une expérience pratique dans la gestion d’environnements MySQL et MS SQL Server. Mes compétences incluent l'automatisation via PL/SQL, les scripts shell et Python, et je travaille aussi bien sous Linux que Windows. J'ai géré des environnements de développement, de test et de production, et je poursuis actuellement plusieurs projets pour approfondir mes connaissances en architecture et automatisation.
+  </p>
+</section>
+
+  <!-- PORTFOLIO SECTION -->
+  <main class="content" id="portfolio">
+    <h2 class="section-title">
+      <span data-lang="en">Featured Projects</span>
+      <span data-lang="fr">Projets phares</span>
+    </h2>
+
+    <section class="card">
+      <img src="assets/exsql.png" alt="EXSQL App">
+      <div>
+        <h3>EXSQL – SQLite Manager App</h3>
+        <p>
+          <span data-lang="en">A lightweight desktop tool to explore, query, and manage SQLite databases. Features structure viewer, backups, and UI-based editing.</span>
+          <span data-lang="fr">Un outil léger pour explorer, interroger et gérer des bases de données SQLite. Comprend une vue de structure, des sauvegardes et une interface graphique.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <img src="assets/converter.png" alt="CSV Tool">
+      <div>
+        <h3>SQL-CSV Converter & Manager</h3>
+        <p>
+          <span data-lang="en">Python-powered script/app that converts CSVs into structured tables and allows mass editing/exporting. Built for speed and simplicity.</span>
+          <span data-lang="fr">Une application en Python qui convertit des fichiers CSV en tables structurées, avec édition/exportation de masse. Conçue pour la vitesse et la simplicité.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <img src="assets/script.png" alt="Data Tools">
+      <div>
+        <h3>Automation Scripts</h3>
+        <p>
+          <span data-lang="en">Python tools that automate data cleaning, SQLite exports, and generate ready-to-import backups. CLI-style with logs.</span>
+          <span data-lang="fr">Des scripts Python pour automatiser le nettoyage de données, les exports SQLite, et générer des sauvegardes prêtes à l'emploi. Style CLI avec journaux.</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT FOOTER -->
+  <footer class="footer">
+    <ul class="contact-links">
+      <li><a href="mailto:ktashastevebrayan@gmail.com" target="_blank">📧 Email</a></li>
+      <li><a href="https://www.linkedin.com/in/tasha-steve-194013336/" target="_blank">🔗 LinkedIn</a></li>
+      <li>
+        <a href="https://drive.google.com/file/d/1TAz71LgVgnpPFcF3jdwIEaI2NJ9B95w6/view?usp=drive_link" target="_blank" class="cta" data-lang="en">📄 Download CV (EN)</a>
+        <a href="https://drive.google.com/file/d/1XBL_D6U8jZr8VEvkXcmkaLkfzUCCWN3L/view?usp=drive_link" target="_blank" class="cta" data-lang="fr">📄 Télécharger CV (FR)</a>
+      </li>
+    </ul>
+  </footer>
+
+  <!-- LANGUAGE TOGGLE SCRIPT -->
+  <script>
+    let currentLang = 'en';
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'fr' : 'en';
+      document.body.classList.toggle('lang-fr', currentLang === 'fr');
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === currentLang ? 'inline' : 'none';
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      toggleLanguage();
+      toggleLanguage();
+    });
+  </script>
+
+</body>
+</html>
